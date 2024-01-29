@@ -12,7 +12,9 @@ ENDCLASS.
 
 
 
-CLASS zsp_crud IMPLEMENTATION.
+CLASS ZSP_CRUD IMPLEMENTATION.
+
+
   METHOD if_oo_adt_classrun~main.
 
  data : lt_itab type  table of ztest_table_item.
@@ -21,7 +23,7 @@ CLASS zsp_crud IMPLEMENTATION.
 *New comment added
  insert ztest_table_item from table @lt_itab.
 
-
+*- New line from onpremise system
 *
     out->write( lt_itab ).
 
