@@ -18,7 +18,7 @@ CLASS zsp_crud IMPLEMENTATION.
  data : lt_itab type  table of ztest_table_item.
 
  lt_itab  = VALUE #( ( emp_no = '10001' uuid = '990'  fname = 'Subham' lname = 'Panda' country = 'England' ) ).
-
+*New comment added
  insert ztest_table_item from table @lt_itab.
 
 
